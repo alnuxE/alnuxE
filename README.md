@@ -48,10 +48,12 @@ Soy un desarrollador de software apasionado por el **Backend**, enfocado en cons
 
 ---
 
-### 💡 ¿En qué estoy trabajando?
-Actualmente desarrollo proyectos que integran **arquitecturas de microservicios** y APIs RESTful de alto rendimiento. Mi interés principal radica en la evolución constante y en la resolución de problemas complejos del mundo real a través del código.
+---
 
-<p align="left">
-  <a href="https://linkedin.com/in/tu-usuario"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:tu-correo@ejemplo.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
-</p>
+### 💼 Experiencia Profesional
+**Full Stack Developer en Metrix** *Impulsando soluciones digitales con tecnología de vanguardia.*
+
+* **Backend:** Construcción de arquitecturas sólidas con **PHP (Laravel)** y **Node.js**.
+* **Frontend:** Creación de interfaces modernas, responsivas y optimizadas con **Tailwind CSS** y **TypeScript**.
+* **Data & APIs:** Diseño y consumo de **APIs REST** con gestión de bases de datos **MongoDB** y SQL.
+* **Metodologías:** Implementación de mejores prácticas en desarrollo de software y entrega continua.
