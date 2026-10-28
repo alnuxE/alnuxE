@@ -46,9 +46,9 @@ Escribo backend para sistemas en producción con volúmenes de datos altos, cons
 
 <div align="center">
 
-| Pruebas automatizadas | Apps publicadas | Ficheros bajo prueba | Colecciones en MongoDB (Nebula) | Roles con reglas en servidor |
+| Pruebas automatizadas | Apps publicadas | Ficheros bajo prueba | Plataformas | En producción desde |
 |:---:|:---:|:---:|:---:|:---:|
-| **808** ✅ | **3** | **218** | **19** | **5** |
+| **808** ✅ | **3** | **218** | **4** | **2024** |
 
 </div>
 
@@ -74,28 +74,11 @@ flowchart LR
 | **Probar, no afirmar** | Cada capa se prueba sin arrastrar a las demás; 808 pruebas entre tres apps. |
 | **Una sola fuente de verdad** | Los totales se calculan, nunca se escriben a mano. |
 | **Fallar de forma segura** | Apps que funcionan sin conexión; la red es una mejora, no un requisito. |
-| **Seguridad desde el diseño** | Una credencial por dispositivo en el almacén seguro del sistema; permisos validados en servidor. |
+| **Seguridad desde el diseño** | Una credencial por dispositivo, guardada en el almacén seguro del sistema. |
 
 ---
 
 ### 🚀 Proyectos destacados
-
-#### 🎬 Gestión Nebula V2 — migración de un sistema heredado · *Full-stack*
-
-Sistema de producción audiovisual (proyectos, escaletas, inventario, cotizaciones, facturación y pagos). Lo migré de una versión que guardaba **todo el negocio en un único blob JSON** a una arquitectura por capas orquestada con Docker.
-
-```mermaid
-flowchart LR
-    subgraph ANTES["❌ Antes"]
-        A1["Python + SQLite"] --> A2["Todo en un blob JSON"] --> A3["Totales calculados<br/>en el navegador"]
-    end
-    subgraph DESPUES["✅ Después"]
-        B1["React · Vite"] --> B2["Node.js · Express<br/>5 roles · reglas en servidor"] --> B3[("MongoDB 7<br/>19 colecciones")]
-    end
-    ANTES == migración de datos históricos ==> DESPUES
-```
-
-<br>
 
 | App | Qué resuelve | Pruebas | Ficheros | Plataformas |
 |---|---|:---:|:---:|---|
@@ -121,11 +104,6 @@ flowchart LR
 **Classly**
 - Dominio modelado en tipos inmutables: un horario no se corrompe a medias.
 - *Offline-first*: la red es una mejora, no un requisito.
-
-**Gestión Nebula V2**
-- Matriz de permisos de cinco roles validada en el servidor, no en el cliente.
-- Cálculo de totales movido del navegador al backend.
-- Traspaso de los datos históricos y puesta en marcha del entorno con Docker.
 
 </details>
 
